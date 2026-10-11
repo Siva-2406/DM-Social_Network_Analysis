@@ -12,7 +12,7 @@ An interactive student capstone dashboard that applies ideas from **Discrete Mat
 - Interactive SVG network graph; select a node to inspect its neighbors.
 - Calculated node degree, normalized degree centrality, network density, average degree, connectivity, possible edges, and degree-sum check.
 - User search plus add/remove sample users and connections.
-- JSON dataset import and export.
+- JSON dataset import/export plus edge-list CSV export.
 - Math Lab with combinatorics calculator, Modus Ponens demonstration, feature-vector example, handshake lemma check, and shortest-path search using breadth-first search (BFS).
 - Responsive layout for desktop and mobile browsers.
 - Project guide with formulas, scope, assumptions, and run instructions.
@@ -49,7 +49,7 @@ The dashboard currently models an **undirected simple graph**. It does not scrap
 
 ## Technologies
 
-HTML5, CSS3, vanilla JavaScript, SVG, and JSON. No npm install, API key, or external JavaScript library is required.
+HTML5, CSS3, vanilla JavaScript, SVG, and JSON. No npm install, API key, or external JavaScript library is required. Optional Python analysis uses only the standard library.
 
 ## Documentation
 

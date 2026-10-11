@@ -18,7 +18,7 @@ Social networks can be viewed as mathematical systems of users, relationships, r
 - The current model is a simple undirected graph: an edge A—B represents a symmetric relationship.
 - No external social network is scraped or connected.
 - Data edits and imports are held in the current browser session; refresh returns to the built-in sample.
-- The static dashboard does not include a server, user login, cloud database, or persistent multi-user storage.
+- The static dashboard does not include a server, user login, cloud database, or persistent multi-user storage. An optional Python command-line analyzer provides additional graph metrics; it runs locally and does not add a web backend.
 
 ## 5. Dataset
 The sample contains six vertices: A, B, C, D, E, F. It includes nine undirected edges:
@@ -85,7 +85,7 @@ The dashboard requires no package installation or API key.
 - [ ] Layout remains usable on a phone-sized viewport.
 
 ## 11. Limitations and future work
-Future extensions could include a Python/NetworkX analysis module, community detection, CSV import, directed and weighted edges, a backend database, authentication, persistent datasets, and comparisons between multiple networks. Real-world data use would require suitable permission, privacy protection, and clear definitions of the relationships being studied.
+Future extensions could include community detection, dashboard-side CSV import, directed and weighted edges, a backend database, authentication, persistent datasets, and comparisons between multiple networks. The current Python analyzer uses only the standard library and does not yet include community detection. Real-world data use would require suitable permission, privacy protection, and clear definitions of the relationships being studied.
 
 ## 12. Team
 The uploaded capstone material lists **SRINITESH M, SANJITH S, and YOGESH R P**. Confirm each member's contribution and any faculty details before final submission. Repository setup contributor: Sivaperumal B.

@@ -1,55 +1,66 @@
-# DM - Social Network Analysis
+# NetScope — Social Network Analysis Dashboard
 
-A student project focused on understanding relationships and interaction patterns in a social network using Social Network Analysis (SNA) concepts.
+An interactive student capstone dashboard that applies ideas from **Discrete Mathematics** to a small social network. It follows the five units in the supplied capstone material: Logic & Proofs, Sets & Relations, Combinatorics, Algebraic Systems, and Graph Theory.
 
-## Overview
+## Open the dashboard
 
-Social Network Analysis studies how people, groups, or other entities are connected. This repository is intended to organize the project materials, implementation, and documentation for the DM Social Network Analysis project.
+- **Run locally:** open [index.html](index.html) in a modern browser, or open the repository in VS Code and use Live Server.
+- **Hosted option:** a GitHub Pages deployment workflow is included in `.github/workflows/deploy-pages.yml`. In the repository, open **Settings → Pages**, set the build/deployment source to **GitHub Actions**, and then check the Actions tab after the next push. The published URL will appear in the workflow deployment result once GitHub Pages is enabled.
 
-## Objectives
+## Dashboard features
 
-- Represent entities as **nodes** and relationships as **edges**.
-- Explore how network structure can reveal connections and interaction patterns.
-- Apply suitable network measures to understand the structure of a network.
-- Document the methodology, findings, and project progress clearly.
+- Interactive SVG network graph; select a node to inspect its neighbors.
+- Calculated node degree, normalized degree centrality, network density, average degree, connectivity, possible edges, and degree-sum check.
+- User search plus add/remove sample users and connections.
+- JSON dataset import and export.
+- Math Lab with combinatorics calculator, Modus Ponens demonstration, feature-vector example, handshake lemma check, and shortest-path search using breadth-first search (BFS).
+- Responsive layout for desktop and mobile browsers.
+- Project guide with formulas, scope, assumptions, and run instructions.
 
-## Possible Analysis Areas
+## Repository structure
 
-Depending on the dataset and implementation, the project may include:
+```text
+.
+├── index.html
+├── data/
+│   └── sample-network.json
+├── docs/
+│   ├── project-report.md
+│   └── viva-questions.md
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml
+└── README.md
+```
 
-- Network visualization
-- Degree and centrality measures
-- Communities or groups in the network
-- Paths and connectivity
-- Interpretation of network patterns
+## Sample dataset
 
-## Tools and Technologies
+The starter graph contains six synthetic users (A–F) and nine undirected edges. It is illustrative, not real social-media data.
 
-The exact tools and technologies will be documented here once finalized. Add the programming language, libraries, dataset source, and setup steps used by the project.
+- Vertices: 6
+- Edges: 9
+- Maximum possible edges: 6 × 5 / 2 = 15
+- Density: 9 / 15 = 60%
+- Degree sequence: A:3, B:3, C:4, D:2, E:4, F:2
+- Degree sum: 18 = 2 × 9 edges
+- Highest degree in this dataset: C and E (tie)
 
-## Repository Structure
+The dashboard currently models an **undirected simple graph**. It does not scrape social platforms, connect to an API, or use a backend database. Imported/edited data is temporary in the browser session; export JSON to keep a copy.
 
-The repository structure and file descriptions will be updated as project files are added.
+## Technologies
 
-## Getting Started
+HTML5, CSS3, vanilla JavaScript, SVG, and JSON. No npm install, API key, or external JavaScript library is required.
 
-1. Clone or download this repository.
-2. Review the project files and documentation as they are added.
-3. Follow the setup instructions that will be provided with the implementation.
+## Documentation
 
-## Project Team
+- [Project report](docs/project-report.md)
+- [Viva questions and answers](docs/viva-questions.md)
+- [Sample network JSON](data/sample-network.json)
 
-- **Sivaperumal B**
-- Add the other team members here.
+## Team
 
-## Project Status
-
-Initial documentation setup. Implementation details, dataset information, screenshots, and results can be added as the project develops.
-
-## Contributing
-
-For a student team project, coordinate changes with the project team and keep documentation updated when features or analysis methods change.
+The uploaded capstone material lists **SRINITESH M, SANJITH S, and YOGESH R P**. Confirm final roles, faculty details, and the exact submission title with your team. Repository setup contributor: Sivaperumal B.
 
 ## License
 
-No license has been specified yet. Add a license if and when the project owners decide how the repository may be reused.
+No license has been specified. Add one if the project owners decide how others may reuse the code.

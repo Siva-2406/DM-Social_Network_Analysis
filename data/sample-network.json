@@ -1,0 +1,67 @@
+{
+  "description": "Synthetic six-user undirected graph for the Social Network Analysis capstone. Not real social-media data.",
+  "users": [
+    {
+      "id": "A",
+      "name": "User A"
+    },
+    {
+      "id": "B",
+      "name": "User B"
+    },
+    {
+      "id": "C",
+      "name": "User C"
+    },
+    {
+      "id": "D",
+      "name": "User D"
+    },
+    {
+      "id": "E",
+      "name": "User E"
+    },
+    {
+      "id": "F",
+      "name": "User F"
+    }
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "A",
+      "C"
+    ],
+    [
+      "A",
+      "E"
+    ],
+    [
+      "B",
+      "C"
+    ],
+    [
+      "B",
+      "D"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "E"
+    ],
+    [
+      "E",
+      "F"
+    ],
+    [
+      "C",
+      "F"
+    ]
+  ]
+}
